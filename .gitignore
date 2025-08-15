@@ -1,0 +1,9 @@
+.DS_Store
+Screenshots/_YFD_2025-08-14 2.gif
+
+# Image file types
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
