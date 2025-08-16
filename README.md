@@ -4,17 +4,10 @@ This repository contains the Lab 6 markdown conversion project for preparing "Yo
 
 ## 🚀 Quick Start
 
-1. **For Document Conversion**:
-   ```bash
-   chmod +x Convert_YFD_to_PWA.sh
-   ./Convert_YFD_to_PWA.sh
-   ```
-
-2. **For EQ Benchmark Analysis**:
-   ```bash
-   cd verona_eq_benchmark/
-   ./run_analysis.sh
-   ```
+```bash
+chmod +x Convert_YFD_to_PWA.sh
+./Convert_YFD_to_PWA.sh
+```
 
 ## Overview
 
@@ -23,7 +16,6 @@ This project includes:
 - Automated conversion script for ProWriting Aid compatibility
 - DOCX output files ready for ProWriting Aid import
 - Both individual chapter files and a combined document
-- **NEW**: Emotional Intelligence benchmark evaluation framework (see `verona_eq_benchmark/`)
 
 ## Directory Structure
 
@@ -40,30 +32,14 @@ lab_6_markdown_conversion_project/
 │   ├── Chapter_2.docx
 │   ├── ... (Chapters 1-20)
 │   └── all_chapters.docx       # Combined manuscript file
-└── verona_eq_benchmark/        # EQ Benchmark Analysis Project
-    ├── README.md               # EQ benchmark documentation
-    ├── run_analysis.sh         # Interactive execution script
-    ├── novel_analysis_framework.py     # Initial EQ scenario extraction
-    ├── verona_eq_benchmark.py          # Main benchmark evaluation system  
-    ├── comparative_analysis.py         # LLM comparison framework
-    ├── verona_eq_benchmark_results.json         # Detailed evaluation results
-    ├── verona_comparative_analysis.json        # Comparative analysis data
-    ├── verona_resurrected_eq_config.json       # Analysis configuration
-    └── VERONA_EQ_ANALYSIS_REPORT.md    # Comprehensive analysis report
 ```
 
 ## Requirements
 
-### For Conversion Script
 - **pandoc**: Universal document converter
   - macOS: `brew install pandoc`
   - Ubuntu/Debian: `sudo apt-get install pandoc`
   - Windows: Download from [pandoc.org](https://pandoc.org/installing.html)
-
-### For EQ Benchmark
-- **Python**: 3.7 or later
-- **Standard library only**: No external dependencies required
-- **Bash shell**: For the interactive analysis script
 
 ## Convert YFD to PWA Script
 
@@ -192,46 +168,6 @@ When adding new chapters to the "Verona Resurrected" manuscript:
 ## About the Manuscript
 
 "Verona Resurrected" is a Gothic horror reimagining of Romeo and Juliet, exploring themes of love, death, resurrection, and moral ambiguity through 20 chapters of dark fantasy narrative.
-
-## 🧠 Emotional Intelligence Benchmark
-
-This project now includes a comprehensive **EQ Benchmark Analysis** that evaluates the emotional intelligence demonstrated in "Verona Resurrected" using methodology adapted from EQBench3 (used for evaluating Large Language Models).
-
-The analysis examines:
-- **Emotional Complexity**: Sophistication of character emotional dynamics
-- **Character Psychology**: Depth of psychological insight and interiority
-- **Empathy & Understanding**: Characters' emotional awareness of others
-- **Moral Reasoning**: Complexity of ethical and moral emotional reasoning
-- **Literary EQ**: Author's skill in conveying emotions to readers
-
-### Key Results
-- **Overall EQ Score**: 79.5/100
-- **Assessment**: Strong (Top-Tier LLM Equivalent)
-- **Performance**: Matches GPT-4 and Claude-3.5-Sonnet levels
-- **Evaluation Methodology**: 5-dimensional analysis across 4 key passages
-- **Notable Achievement**: First literary adaptation of EQBench3 framework
-
-### Quick Start
-```bash
-cd verona_eq_benchmark/
-./run_analysis.sh                   # Interactive analysis menu (recommended)
-# OR run individual components:
-python verona_eq_benchmark.py       # Run full EQ evaluation
-python comparative_analysis.py      # Compare with LLM benchmarks
-```
-
-For detailed analysis, see `verona_eq_benchmark/README.md` and `verona_eq_benchmark/VERONA_EQ_ANALYSIS_REPORT.md`.
-
-## 🔬 Technical Innovation
-
-This project demonstrates several innovative technical achievements:
-
-- **Cross-domain adaptation**: Successfully adapted AI evaluation methodology for literary analysis
-- **Quantitative literary criticism**: Applied computational metrics to creative writing assessment  
-- **Comparative benchmarking**: Established performance equivalence between literature and AI systems
-- **Automated analysis framework**: Created reusable tools for evaluating emotional intelligence in text
-
-The framework can be extended to analyze other literary works, genres, or creative writing samples.
 
 ## License
 
