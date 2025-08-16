@@ -1,4 +1,5 @@
 # Verona Resurrected EQ Benchmark
+# THIS PROJECT IS SEPARATE FROM THE MARKDOWN CONVERSION PROJECT
 
 A comprehensive emotional intelligence evaluation framework for "Verona Resurrected," adapted from the EQBench3 methodology used for evaluating Large Language Models.
 

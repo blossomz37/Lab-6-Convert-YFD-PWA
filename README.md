@@ -36,7 +36,9 @@ lab_6_markdown_conversion_project/
 
 ## Requirements
 
-- **pandoc**: Universal document converter
+- **Python 3.7+**: Required for the python-docx conversion engine
+- **python-docx**: Automatically installed by the script if needed
+- **pandoc** (fallback): Universal document converter
   - macOS: `brew install pandoc`
   - Ubuntu/Debian: `sudo apt-get install pandoc`
   - Windows: Download from [pandoc.org](https://pandoc.org/installing.html)
@@ -47,10 +49,11 @@ lab_6_markdown_conversion_project/
 
 The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into ProWriting Aid by:
 
-1. **Standardizing chapter headings**: Converts periods to colons and ensures consistent H2 (`##`) format
-2. **Converting to DOCX format**: Uses pandoc to convert markdown to Word-compatible DOCX format
-3. **Creating combined document**: Generates both individual chapter files and a single merged document with proper page breaks
-4. **Preserving originals**: Creates converted copies while leaving original files unchanged
+1. **Standardizing chapter headings**: Converts periods to colons and ensures consistent H1 (`#`) format
+2. **Converting to DOCX format**: Uses python-docx for precise ProWriting Aid compatibility
+3. **Creating combined document**: Generates both individual chapter files and a single merged document
+4. **ProWriting Aid optimization**: Ensures exact structure compatibility for chapter detection
+5. **Preserving originals**: Creates converted copies while leaving original files unchanged
 
 ### Usage
 
@@ -75,12 +78,17 @@ The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into 
 
 ### What the Script Does
 
-- Scans the `./markdown_yfd/` directory for all `.md` files
-- Standardizes chapter heading format to `## Chapter N:` (converts periods to colons)
-- Uses pandoc to convert markdown to DOCX format with proper OpenXML page breaks
-- Creates individual files in `./docx_pwa/` directory
-- Combines all chapters into `all_chapters.docx` with native DOCX page breaks after each chapter (except the last)
-- Provides progress feedback and summary
+- **Dependency Check**: Automatically installs python-docx if needed (falls back to pandoc)
+- **File Processing**: Scans the `./markdown_yfd/` directory for all `.md` files
+- **Heading Standardization**: Converts chapter headings to `# Chapter N:` format (H1 for ProWriting Aid)
+- **Precise Conversion**: Uses python-docx to create DOCX with exact ProWriting Aid structure
+- **Individual Files**: Creates separate DOCX files for each chapter
+- **Combined Document**: Merges all chapters into `all_chapters.docx` with proper structure
+- **ProWriting Aid Optimization**: 
+  - Only uses `Heading1` + `Normal` styles
+  - Adds empty paragraphs after chapter headings
+  - Zero page breaks for clean document flow
+- **Progress Feedback**: Provides detailed conversion status and verification
 
 ### Example Conversion
 
@@ -91,9 +99,9 @@ The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into 
 
 **Standardized format**:
 ```markdown
-## Chapter 1: Dark Alchemy
+# Chapter 1: Dark Alchemy
 ```
-*Note: The script automatically converts periods to colons for consistency and adds proper DOCX page breaks after each chapter*
+*Note: The script automatically converts periods to colons and H2 to H1 format for ProWriting Aid compatibility*
 
 ## File Formats
 
@@ -104,12 +112,14 @@ The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into 
 - Source files for the conversion process
 
 ### ProWriting Aid Ready (`/docx_pwa/`)
-- Converted files optimized for ProWriting Aid import
-- Individual chapter files: `Chapter_1.docx` through `Chapter_20.docx`
-- Combined manuscript: `all_chapters.docx` (all 20 chapters with native DOCX page breaks)
-- Standardized H2 chapter headings with consistent colon format (`## Chapter N: Title`)
-- Native page breaks after each chapter (except the last) for proper manuscript formatting
-- Microsoft Word compatible DOCX format
+- **Optimized files** for ProWriting Aid chapter detection
+- **Individual chapters**: `Chapter_1.docx` through `Chapter_20.docx`
+- **Combined manuscript**: `all_chapters.docx` (all 20 chapters optimized)
+- **Perfect structure**: `Heading1` + `Normal` styles only
+- **Chapter format**: H1 headings with colon format (`# Chapter N: Title`)
+- **Empty paragraphs**: Added after each chapter heading for proper parsing
+- **Zero page breaks**: Clean document flow for optimal detection
+- **Microsoft Word compatible** DOCX format
 
 ## ProWriting Aid Import Instructions
 
@@ -118,12 +128,14 @@ The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into 
 3. Choose files from the `docx_pwa/` directory:
    - Import individual chapters for detailed analysis
    - Import `all_chapters.docx` for full manuscript review
-4. ProWriting Aid will recognize the H2 chapter headings for proper document structure
+4. **✅ Success**: ProWriting Aid will now properly detect and split all 20 chapters
 
-## Requirements
+## Technical Requirements
 
+- **Python 3.7+** (for python-docx conversion engine)
 - **Bash shell** (included on macOS/Linux)
-- **Pandoc** (for DOCX conversion)
+- **python-docx** (automatically installed by script)
+- **Pandoc** (fallback option)
   ```bash
   # Install on macOS with Homebrew
   brew install pandoc
@@ -132,13 +144,14 @@ The `Convert_YFD_to_PWA.sh` script prepares your markdown files for import into 
 ## Notes
 
 - Original files in `/markdown_yfd/` are never modified
-- The script creates both individual chapter files and a combined document with native DOCX page breaks
-- The script can be run multiple times safely (overwrites previous output)
-- Chapter titles are automatically standardized from periods to colons (e.g., "Chapter 1. Title" → "Chapter 1: Title")
-- All paths use relative references for cross-platform compatibility
-- Suitable for version control and GitHub sharing
-- Pandoc warnings about temporary file extensions are normal and harmless
-- Chapter numbering is handled automatically and sorted correctly (1, 2, ..., 10, 11, etc.)
+- **python-docx engine**: Creates perfect ProWriting Aid structure (Heading1 + Normal only)
+- **Chapter detection**: Optimized with empty paragraphs and proper heading hierarchy
+- **Multiple runs safe**: Script can be run multiple times (overwrites previous output)
+- **Auto-standardization**: Converts periods to colons (e.g., "Chapter 1. Title" → "Chapter 1: Title")
+- **Cross-platform**: All paths use relative references for compatibility
+- **Version control ready**: Suitable for GitHub sharing and collaboration
+- **Smart numbering**: Handles chapters 1-20 correctly in proper sequence
+- **Fallback support**: Uses pandoc if python-docx installation fails
 
 ## Troubleshooting
 
