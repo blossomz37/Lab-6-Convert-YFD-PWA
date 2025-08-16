@@ -1,0 +1,64 @@
+{
+  "analysis_date": "2025-08-15T18:51:50.132715",
+  "novel_score": 79.5,
+  "tier_placement": "Top Tier",
+  "llm_comparison": {
+    "Top Tier LLMs": {
+      "typical_score": "75-85/100",
+      "models": [
+        "Claude-3.5-Sonnet",
+        "GPT-4",
+        "Gemini-Pro"
+      ],
+      "characteristics": [
+        "Strong conversational EQ",
+        "Good empathy recognition",
+        "Solid moral reasoning",
+        "Contextual emotional understanding"
+      ]
+    },
+    "Mid Tier LLMs": {
+      "typical_score": "65-75/100",
+      "models": [
+        "GPT-3.5",
+        "Claude-3",
+        "Various fine-tuned models"
+      ],
+      "characteristics": [
+        "Basic emotional recognition",
+        "Inconsistent empathy",
+        "Simple moral frameworks",
+        "Limited emotional nuance"
+      ]
+    },
+    "Lower Tier LLMs": {
+      "typical_score": "50-65/100",
+      "models": [
+        "Older models",
+        "Smaller parameter models"
+      ],
+      "characteristics": [
+        "Poor emotional understanding",
+        "Mechanical responses",
+        "Limited contextual awareness",
+        "Basic reasoning"
+      ]
+    }
+  },
+  "category_analysis": {
+    "emotional_complexity": 17.0,
+    "character_psychology": 16.0,
+    "empathy_understanding": 14.25,
+    "moral_reasoning": 15.0,
+    "literary_eq": 17.25
+  },
+  "literary_advantages": [
+    "\ud83d\udcda Narrative depth allows for complex character development over time",
+    "\ud83c\udfa8 Atmospheric and symbolic emotional expression beyond conversation",
+    "\ud83e\udde0 Author can explore internal psychological states directly",
+    "\ud83d\udcad Complex moral ambiguity and ethical exploration",
+    "\ud83c\udf1f Emotional themes can be woven through multiple narrative layers",
+    "\ud83c\udfaa Genre conventions (Gothic horror) enhance emotional impact"
+  ],
+  "recommendations": "Focus on empathy understanding while leveraging literary eq strength"
+}

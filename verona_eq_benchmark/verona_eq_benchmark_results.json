@@ -1,0 +1,123 @@
+{
+  "benchmark_info": {
+    "novel_title": "Verona Resurrected",
+    "author": "Carlo",
+    "evaluation_date": "2025-08-16T01:50:09.822034+00:00",
+    "methodology": "EQBench3-inspired literary analysis",
+    "passages_evaluated": 4
+  },
+  "overall_results": {
+    "average_eq_score": 79.5,
+    "highest_score": 89,
+    "lowest_score": 73,
+    "score_range": 16
+  },
+  "category_analysis": {
+    "emotional_complexity": 17.0,
+    "character_psychology": 16.0,
+    "empathy_understanding": 14.25,
+    "moral_reasoning": 15.0,
+    "literary_eq": 17.25
+  },
+  "detailed_results": [
+    {
+      "passage_id": "Chapter_1_The_Apothecary's_Scientific_Rationalization",
+      "chapter": "Chapter_1",
+      "emotional_complexity": 18,
+      "character_psychology": 19,
+      "empathy_understanding": 12,
+      "moral_reasoning": 16,
+      "literary_eq": 18,
+      "total_score": 83,
+      "analysis_text": "\n**Emotional Complexity (18/20)**: Highly sophisticated exploration of moral rationalization and scientific hubris. The Apothecary's internal justifications reveal deep psychological complexity.\n\n**Character Psychology (19/20)**: Exceptional insight into the antagonist's mindset. The text reveals his self-deception, intellectual arrogance, and underlying fears.\n\n**Empathy & Understanding (12/20)**: The Apothecary shows limited empathy, viewing others as subjects. However, this limitation is itself emotionally intelligent characterization.\n\n**Moral Reasoning (16/20)**: Complex moral framework, though corrupted. The character's reasoning process is sophisticated even while ethically flawed.\n\n**Literary EQ (18/20)**: Author demonstrates high emotional intelligence in portraying the psychology of intellectual arrogance and moral blindness.\n                ",
+      "characters_involved": [
+        "The Apothecary"
+      ],
+      "key_themes": [
+        "scientific hubris",
+        "moral rationalization",
+        "dehumanization"
+      ]
+    },
+    {
+      "passage_id": "Chapter_2_Corrupted_Love_Reunion",
+      "chapter": "Chapter_2",
+      "emotional_complexity": 20,
+      "character_psychology": 17,
+      "empathy_understanding": 19,
+      "moral_reasoning": 14,
+      "literary_eq": 19,
+      "total_score": 89,
+      "analysis_text": "\n**Emotional Complexity (20/20)**: Masterful portrayal of love that transcends death and manipulation. Complex dynamics of supernatural bond vs. individual agency.\n\n**Character Psychology (17/20)**: Excellent exploration of shared consciousness and emotional synchronization while maintaining individual identity.\n\n**Empathy & Understanding (19/20)**: The lovers demonstrate perfect emotional attunement, representing idealized emotional understanding.\n\n**Moral Reasoning (14/20)**: Their moral framework centers on love and mutual protection rather than broader ethical considerations.\n\n**Literary EQ (19/20)**: Author brilliantly conveys the otherworldly nature of their connection while keeping it emotionally authentic.\n                ",
+      "characters_involved": [
+        "Romeo",
+        "Juliet",
+        "The Apothecary"
+      ],
+      "key_themes": [
+        "corrupted love",
+        "supernatural bond",
+        "defiance",
+        "identity"
+      ]
+    },
+    {
+      "passage_id": "Chapter_3_Friar_Lawrence's_Moral_Crisis",
+      "chapter": "Chapter_3",
+      "emotional_complexity": 15,
+      "character_psychology": 14,
+      "empathy_understanding": 13,
+      "moral_reasoning": 15,
+      "literary_eq": 16,
+      "total_score": 73,
+      "analysis_text": "Standard emotional intelligence demonstration for this passage type.",
+      "characters_involved": [
+        "Friar Lawrence",
+        "The Apothecary"
+      ],
+      "key_themes": [
+        "guilt",
+        "responsibility",
+        "faith vs science",
+        "moral burden"
+      ]
+    },
+    {
+      "passage_id": "Chapter_5_Romeo's_Protective_Rage",
+      "chapter": "Chapter_5",
+      "emotional_complexity": 15,
+      "character_psychology": 14,
+      "empathy_understanding": 13,
+      "moral_reasoning": 15,
+      "literary_eq": 16,
+      "total_score": 73,
+      "analysis_text": "Standard emotional intelligence demonstration for this passage type.",
+      "characters_involved": [
+        "Romeo",
+        "Juliet",
+        "Guards"
+      ],
+      "key_themes": [
+        "protective love",
+        "violence",
+        "transformation",
+        "otherness"
+      ]
+    }
+  ],
+  "literary_assessment": {
+    "overall_rating": "Strong",
+    "strengths": [
+      "Sophisticated emotional complexity and nuanced character development",
+      "Deep psychological insight and character interiority",
+      "Exceptional literary emotional intelligence and reader engagement"
+    ],
+    "areas_for_development": [],
+    "notable_features": [
+      "Innovative blend of Gothic horror and emotional depth",
+      "Complex moral landscape with ethically ambiguous characters",
+      "Sophisticated exploration of love, death, and transformation",
+      "Rich atmospheric writing that enhances emotional impact"
+    ]
+  }
+}

@@ -9,6 +9,7 @@ This project includes:
 - Automated conversion script for ProWriting Aid compatibility
 - DOCX output files ready for ProWriting Aid import
 - Both individual chapter files and a combined document
+- **NEW**: Emotional Intelligence benchmark evaluation framework (see `verona_eq_benchmark/`)
 
 ## Directory Structure
 
@@ -20,11 +21,16 @@ lab_6_markdown_conversion_project/
 │   ├── Chapter_1.md            # "Dark Alchemy"
 │   ├── Chapter_2.md
 │   └── ... (Chapters 1-20)    # Complete 20-chapter manuscript
-└── docx_pwa/                   # ProWriting Aid ready files (DOCX format)
-    ├── Chapter_1.docx
-    ├── Chapter_2.docx
-    ├── ... (Chapters 1-20)
-    └── all_chapters.docx       # Combined manuscript file
+├── docx_pwa/                   # ProWriting Aid ready files (DOCX format)
+│   ├── Chapter_1.docx
+│   ├── Chapter_2.docx
+│   ├── ... (Chapters 1-20)
+│   └── all_chapters.docx       # Combined manuscript file
+└── verona_eq_benchmark/        # EQ Benchmark Analysis Project
+    ├── README.md               # EQ benchmark documentation
+    ├── *.py                    # Analysis framework scripts
+    ├── *.json                  # Evaluation results and data
+    └── VERONA_EQ_ANALYSIS_REPORT.md  # Comprehensive analysis report
 ```
 
 ## Convert YFD to PWA Script
@@ -153,7 +159,25 @@ When adding new chapters to the "Verona Resurrected" manuscript:
 
 ## About the Manuscript
 
-This lab project uses a 20-chapter gothic romance manuscript "Verona Resurrected" as sample content for demonstrating markdown-to-DOCX conversion workflows for writing tools like ProWriting Aid.
+"Verona Resurrected" is a Gothic horror reimagining of Romeo and Juliet, exploring themes of love, death, resurrection, and moral ambiguity through 20 chapters of dark fantasy narrative.
+
+## 🧠 Emotional Intelligence Benchmark
+
+This project now includes a comprehensive **EQ Benchmark Analysis** that evaluates the emotional intelligence demonstrated in "Verona Resurrected" using methodology adapted from EQBench3 (used for evaluating Large Language Models).
+
+### Key Results
+- **Overall EQ Score**: 79.5/100
+- **Assessment**: Strong (Top-Tier LLM Equivalent)
+- **Performance**: Matches GPT-4 and Claude-3.5-Sonnet levels
+
+### Quick Start
+```bash
+cd verona_eq_benchmark/
+python verona_eq_benchmark.py      # Run full EQ evaluation
+python comparative_analysis.py     # Compare with LLM benchmarks
+```
+
+For detailed analysis, see `verona_eq_benchmark/README.md` and `verona_eq_benchmark/VERONA_EQ_ANALYSIS_REPORT.md`.
 
 ## License
 

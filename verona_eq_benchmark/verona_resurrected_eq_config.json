@@ -1,0 +1,137 @@
+{
+  "benchmark_name": "Verona Resurrected EQ Analysis",
+  "novel_title": "Verona Resurrected",
+  "author": "Carlo",
+  "analysis_date": "2025-08-16T01:48:42.241567+00:00",
+  "methodology": "Adapted from EQBench3 for literary analysis",
+  "evaluation_dimensions": [
+    "Emotional Complexity",
+    "Character Psychology",
+    "Empathy & Understanding",
+    "Moral Reasoning",
+    "Literary Emotional Intelligence"
+  ],
+  "characters_analyzed": [
+    "The Apothecary",
+    "Romeo",
+    "Juliet",
+    "Friar Lawrence"
+  ],
+  "total_chapters": 20,
+  "scenarios_extracted": 31,
+  "evaluation_prompts": [
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_2",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 2\n**Characters**: Apothecary\n**Detected Themes**: \n\n**Text Passage**:\nThe Apothecary of Mantua descended the narrow stairway into the Capulet family burial vault, his rusted lantern swinging with each careful step. Its feeble light danced across the carved stone walls, casting his shadow as a gaunt herald of resurrection against elaborate reliefs depicting the Judgment Day. The air hung heavy with the mingled scents of incense, candle wax, and the sweet undertone of decay, while the morning dew rendered each stone treacherous beneath his worn leather boots. He clutched a wicker basket against his chest, its contents clinking softly; iron collars, sturdy shackles, and several vials of turbid resurrection serum nestled in straw.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The Apothecary of Mantua descended the narrow stairway into the Capulet family burial vault, his rusted lantern swinging with each careful step. Its feeble light danced across the carved stone walls, casting his shadow as a gaunt herald of resurrection against elaborate reliefs depicting the Judgment Day. The air hung heavy with the mingled scents of incense, candle wax, and the sweet undertone of decay, while the morning dew rendered each stone treacherous beneath his worn leather boots. He clutched a wicker basket against his chest, its contents clinking softly; iron collars, sturdy shackles, and several vials of turbid resurrection serum nestled in straw."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_3",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 3\n**Characters**: Apothecary\n**Detected Themes**: \n\n**Text Passage**:\nThe sepulcher opened before him as he reached the bottom stair, revealing a chamber far grander than its humble entrance suggested. Vaulted ceilings arched overhead, supported by columns carved with the Capulet family crest: a falcon with outstretched wings clutching a rose in its talons. Marble statues of stern-faced patriarchs kept their eternal vigil from niches in the walls, their cold eyes seeming to follow his movements with aristocratic disapproval. Bronze sconces, now cold and empty, lined the walls where mourners' candles had burned during yesterday's hasty interment ceremony. Their wax drippings formed stalactites along the ornate stonework, evidence of centuries of Capulet grief.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The sepulcher opened before him as he reached the bottom stair, revealing a chamber far grander than its humble entrance suggested. Vaulted ceilings arched overhead, supported by columns carved with the Capulet family crest: a falcon with outstretched wings clutching a rose in its talons. Marble statues of stern-faced patriarchs kept their eternal vigil from niches in the walls, their cold eyes seeming to follow his movements with aristocratic disapproval. Bronze sconces, now cold and empty, lined the walls where mourners' candles had burned during yesterday's hasty interment ceremony. Their wax drippings formed stalactites along the ornate stonework, evidence of centuries of Capulet grief."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_4",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 4\n**Characters**: Apothecary\n**Detected Themes**: \n\n**Text Passage**:\nThe Apothecary inhaled deeply, tasting metal on his tongue, the particular flavor of wealth intermingled with mortality. His fingers, sensitized by years of measuring precise quantities of herbs and minerals, detected subtle temperature variations as he moved deeper into the crypt; the ancient stones radiated a chill that penetrated his thin garments, while the newer section, recently opened for the tragic lovers, retained some warmth from yesterday's funeral proceedings. The residue of expensive incense clung to the elaborate carvings, masking but not eliminating the underlying scent of human remains in various states of dissolution.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The Apothecary inhaled deeply, tasting metal on his tongue, the particular flavor of wealth intermingled with mortality. His fingers, sensitized by years of measuring precise quantities of herbs and minerals, detected subtle temperature variations as he moved deeper into the crypt; the ancient stones radiated a chill that penetrated his thin garments, while the newer section, recently opened for the tragic lovers, retained some warmth from yesterday's funeral proceedings. The residue of expensive incense clung to the elaborate carvings, masking but not eliminating the underlying scent of human remains in various states of dissolution."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_5",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 5\n**Characters**: Apothecary, Romeo, Juliet\n**Detected Themes**: \n\n**Text Passage**:\nHe paused before the marble slab where Verona's most tragic lovers had been laid to rest, raising his lantern to better examine their coffins. Unlike the weathered stone sarcophagi of their ancestors, Romeo and Juliet reposed in wooden caskets, temporary accommodations until proper monuments could be commissioned. The Montague boy's coffin appeared plain, hastily constructed, while the Capulet girl's featured delicate carvings of lilies and angels, befitting her station. The Apothecary set his basket upon the cold floor with practiced care, a thin smile forming on his lips.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary",
+        "Romeo",
+        "Juliet"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "He paused before the marble slab where Verona's most tragic lovers had been laid to rest, raising his lantern to better examine their coffins. Unlike the weathered stone sarcophagi of their ancestors, Romeo and Juliet reposed in wooden caskets, temporary accommodations until proper monuments could be commissioned. The Montague boy's coffin appeared plain, hastily constructed, while the Capulet girl's featured delicate carvings of lilies and angels, befitting her station. The Apothecary set his basket upon the cold floor with practiced care, a thin smile forming on his lips."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_7",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 7\n**Characters**: Apothecary\n**Detected Themes**: \n\n**Text Passage**:\nThe serum's murky consistency reminded him of his first successful experiment three winters past: a small gray cat found frozen in the snow outside his laboratory. The creature had been perfectly dead, stiff with cold and without heartbeat for hours when he injected the prototype formula directly into its heart. He recalled with perfect clarity how the animal had convulsed, then gone still, only to open its eyes twelve hours later with an unnatural yellow glow. The cat had lived another fortnight in his care, following his movements with unsettling attention, obeying simple commands with uncharacteristic docility. When it finally collapsed, its internal organs had crystallized into something neither fully organic nor mineral, a transformation that had informed every subsequent refinement of his formula.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The serum's murky consistency reminded him of his first successful experiment three winters past: a small gray cat found frozen in the snow outside his laboratory. The creature had been perfectly dead, stiff with cold and without heartbeat for hours when he injected the prototype formula directly into its heart. He recalled with perfect clarity how the animal had convulsed, then gone still, only to open its eyes twelve hours later with an unnatural yellow glow. The cat had lived another fortnight in his care, following his movements with unsettling attention, obeying simple commands with uncharacteristic docility. When it finally collapsed, its internal organs had crystallized into something neither fully organic nor mineral, a transformation that had informed every subsequent refinement of his formula."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_8",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 8\n**Characters**: Apothecary, Romeo\n**Detected Themes**: \n\n**Text Passage**:\nAccording to his calculations, the first stage of the serum had induced a deathlike slumber indistinguishable from true mortality; the second stage, however, would bring reanimation with certain useful alterations to the temperament and faculties. The Apothecary had administered hundreds of poisons throughout his career but had reserved this particular concoction for an opportunity worthy of its potential. Romeo's desperate plea had presented just such a moment, transforming a mere transaction into the culmination of decades of forbidden research.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary",
+        "Romeo"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "According to his calculations, the first stage of the serum had induced a deathlike slumber indistinguishable from true mortality; the second stage, however, would bring reanimation with certain useful alterations to the temperament and faculties. The Apothecary had administered hundreds of poisons throughout his career but had reserved this particular concoction for an opportunity worthy of its potential. Romeo's desperate plea had presented just such a moment, transforming a mere transaction into the culmination of decades of forbidden research."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_12",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 12\n**Characters**: Apothecary, Juliet\n**Detected Themes**: \n\n**Text Passage**:\nThe scratching intensified, becoming more purposeful and direct. He placed his hand upon the coffin lid, feeling the vibrations of Juliet's efforts through the wood. Early light began to seep through a narrow window slit high in the eastern wall, painting a thin golden line across the stone floor. Outside, the distant bells of Verona's cathedral chimed the quarter-hour before dawn, reminding him that time pressed ever forward. Soon the churchyard above would stir with morning prayers and grave-tenders.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary",
+        "Juliet"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The scratching intensified, becoming more purposeful and direct. He placed his hand upon the coffin lid, feeling the vibrations of Juliet's efforts through the wood. Early light began to seep through a narrow window slit high in the eastern wall, painting a thin golden line across the stone floor. Outside, the distant bells of Verona's cathedral chimed the quarter-hour before dawn, reminding him that time pressed ever forward. Soon the churchyard above would stir with morning prayers and grave-tenders."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_19",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 19\n**Characters**: Apothecary\n**Detected Themes**: emotional_regulation\n\n**Text Passage**:\nHis past experiments offered contradictory guidance. The miller's son from Padua had awakened docile and confused, easily directed into servitude until his brother discovered and destroyed him. The twins from Venice, however, had emerged with such violence that three assistants perished before the subjects could be properly restrained. The composition of this particular batch most closely resembled the formula used on the Venetian pair, but he had modified the binding agent and reduced the stimulant properties specifically to avoid such uncontrolled awakening.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary"
+      ],
+      "emotional_themes": [
+        "emotional_regulation"
+      ],
+      "text_excerpt": "His past experiments offered contradictory guidance. The miller's son from Padua had awakened docile and confused, easily directed into servitude until his brother discovered and destroyed him. The twins from Venice, however, had emerged with such violence that three assistants perished before the subjects could be properly restrained. The composition of this particular batch most closely resembled the formula used on the Venetian pair, but he had modified the binding agent and reduced the stimulant properties specifically to avoid such uncontrolled awakening."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_20",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 20\n**Characters**: Apothecary, Romeo, Juliet\n**Detected Themes**: \n\n**Text Passage**:\nThe scratching from Juliet's coffin diminished momentarily, then resumed with altered rhythm, slower, more deliberate. Perhaps she conserved her strength or adapted to her confinement. The Apothecary circled both coffins, noting the complete silence from Romeo's casket with growing concern. Different reactions to identical serums suggested variables he had not accounted for: perhaps the lovers' youth, their extreme emotional states at death, or some quality in the Veronese water that had constituted their final drinks.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary",
+        "Romeo",
+        "Juliet"
+      ],
+      "emotional_themes": [],
+      "text_excerpt": "The scratching from Juliet's coffin diminished momentarily, then resumed with altered rhythm, slower, more deliberate. Perhaps she conserved her strength or adapted to her confinement. The Apothecary circled both coffins, noting the complete silence from Romeo's casket with growing concern. Different reactions to identical serums suggested variables he had not accounted for: perhaps the lovers' youth, their extreme emotional states at death, or some quality in the Veronese water that had constituted their final drinks."
+    },
+    {
+      "scenario_id": "Chapter_1_Emotional_scene_29",
+      "chapter": "Chapter_1",
+      "evaluation_prompt": "\nPlease evaluate the emotional intelligence demonstrated in this passage from \"Verona Resurrected\":\n\n**Context**: Chapter_1 - Emotional scene 29\n**Characters**: Apothecary, Romeo, Friar Lawrence\n**Detected Themes**: moral_reasoning, psychological_complexity\n\n**Text Passage**:\nThe Apothecary's words died in his throat as Romeo rose from his coffin with unnatural grace, his movements fluid yet somehow wrong, as though his limbs obeyed different laws of motion than those governing ordinary men. His burial clothes, a simple white shroud provided by the Friar, hung in tatters around his shoulders, torn during his violent emergence. His skin bore a waxy pallor that caught the lantern light strangely, neither reflecting nor absorbing it properly. His eyes, once warm with passionate youth, now reflected the flame with cold intensity.\n\n**Evaluation Criteria**:\n1. **Emotional Complexity** (0-20): How nuanced and sophisticated are the emotional dynamics?\n2. **Character Psychology** (0-20): How well does the text reveal internal emotional states?\n3. **Empathy & Understanding** (0-20): How well do characters understand each other's emotions?\n4. **Moral Reasoning** (0-20): How sophisticated is the ethical/moral emotional reasoning?\n5. **Literary Emotional Intelligence** (0-20): How effectively does the author convey complex emotions?\n\nPlease provide a score for each criterion and explain your reasoning. Total score out of 100.\n                ",
+      "characters_involved": [
+        "Apothecary",
+        "Romeo",
+        "Friar Lawrence"
+      ],
+      "emotional_themes": [
+        "moral_reasoning",
+        "psychological_complexity"
+      ],
+      "text_excerpt": "The Apothecary's words died in his throat as Romeo rose from his coffin with unnatural grace, his movements fluid yet somehow wrong, as though his limbs obeyed different laws of motion than those governing ordinary men. His burial clothes, a simple white shroud provided by the Friar, hung in tatters around his shoulders, torn during his violent emergence. His skin bore a waxy pallor that caught the lantern light strangely, neither reflecting nor absorbing it properly. His eyes, once warm with passionate youth, now reflected the flame with cold intensity."
+    }
+  ]
+}
