@@ -24,7 +24,7 @@ for file in ./markdown_yfd/*.md; do
         
         # Convert H1 chapter headings to H2 and standardize format with colons
         # Handle both # Chapter and ## Chapter formats, convert periods to colons
-        sed -e 's/^# Chapter/## Chapter/g' -e 's/^## Chapter \([0-9]\+\)\./## Chapter \1:/g' "$file" | pandoc -f markdown -t docx -o "./docx_pwa/${filename}.docx"
+        sed -e 's/^# Chapter/## Chapter/g' -e 's/^## Chapter \([0-9]*\)\./## Chapter \1:/g' "$file" | pandoc -f markdown -t docx -o "./docx_pwa/${filename}.docx"
         
         echo "Converted: $filename.md -> $filename.docx"
         ((count++))
@@ -50,10 +50,14 @@ total_files=${#sorted_files[@]}
 for file in "${sorted_files[@]}"; do
     ((file_count++))
     # Convert H1 to H2 and standardize format with colons for combined file
-    sed -e 's/^# Chapter/## Chapter/g' -e 's/^## Chapter \([0-9]\+\)\./## Chapter \1:/g' "$file" >> "$combined_temp"
-    # Add page break between chapters (except for the last one)
+    sed -e 's/^# Chapter/## Chapter/g' -e 's/^## Chapter \([0-9]*\)\./## Chapter \1:/g' "$file" >> "$combined_temp"
+    # Add page break after each chapter (except the last one)
     if [ $file_count -lt $total_files ]; then
-        echo -e "\n<div style=\"page-break-before: always;\"></div>\n" >> "$combined_temp"
+        echo "" >> "$combined_temp"
+        echo '```{=openxml}' >> "$combined_temp"
+        echo '<w:p><w:r><w:br w:type="page"/></w:r></w:p>' >> "$combined_temp"
+        echo '```' >> "$combined_temp"
+        echo "" >> "$combined_temp"
     fi
 done
 

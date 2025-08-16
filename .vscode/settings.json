@@ -1,0 +1,8 @@
+{
+    "markdown.validate.enabled": true,
+    "[markdown]": {
+        "editor.cursorSurroundingLines": 0
+    },
+    "workbench.colorTheme": "Default Light Modern",
+    "editor.fontSize": 12
+}
