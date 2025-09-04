@@ -1,14 +1,15 @@
+---
 name: Convert Markdown to DOCX for ProWriting Aid
 
 on:
   # Trigger on push to main branch
   push:
-    branches: [ main ]
-    paths: 
+    branches: [main]
+    paths:
       - 'markdown_yfd/**'
       - 'Convert_YFD_to_PWA.sh'
       - 'markdown_to_docx.py'
-  
+
   # Allow manual workflow triggering
   workflow_dispatch:
     inputs:
@@ -21,76 +22,76 @@ on:
 jobs:
   convert-markdown:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        
-    - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc
-        
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install python-docx
-        
-    - name: Make conversion script executable
-      run: chmod +x Convert_YFD_to_PWA.sh
-      
-    - name: Check input files
-      run: |
-        echo "Checking markdown_yfd directory:"
-        ls -la markdown_yfd/ || echo "No markdown_yfd directory found"
-        echo "Total markdown files:"
-        find markdown_yfd/ -name "*.md" -type f | wc -l || echo "0"
-        
-    - name: Run conversion script
-      run: |
-        echo "Starting conversion process..."
-        ./Convert_YFD_to_PWA.sh
-        
-    - name: Verify conversion results
-      run: |
-        echo "Checking docx_pwa directory:"
-        ls -la docx_pwa/ || echo "No output directory found"
-        echo "Generated DOCX files:"
-        find docx_pwa/ -name "*.docx" -type f | wc -l || echo "0"
-        
-    - name: Upload converted DOCX files
-      uses: actions/upload-artifact@v3
-      with:
-        name: converted-docx-files
-        path: |
-          docx_pwa/*.docx
-        retention-days: 30
-        
-    - name: Upload conversion log
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: conversion-log
-        path: |
-          *.log
-        retention-days: 7
-        if-no-files-found: ignore
-        
-    - name: Create deployment summary
-      run: |
-        echo "# Conversion Summary" >> $GITHUB_STEP_SUMMARY
-        echo "## Input Files" >> $GITHUB_STEP_SUMMARY
-        echo "- Total markdown files processed: $(find markdown_yfd/ -name '*.md' -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
-        echo "## Output Files" >> $GITHUB_STEP_SUMMARY
-        echo "- DOCX files generated: $(find docx_pwa/ -name '*.docx' -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
-        echo "- Combined manuscript: $(ls -1 docx_pwa/all_chapters.docx 2>/dev/null && echo 'Created' || echo 'Not created')" >> $GITHUB_STEP_SUMMARY
-        echo "## Usage" >> $GITHUB_STEP_SUMMARY
-        echo "1. Download the 'converted-docx-files' artifact from this workflow run" >> $GITHUB_STEP_SUMMARY
-        echo "2. Extract the ZIP file to get your DOCX files" >> $GITHUB_STEP_SUMMARY
-        echo "3. Import the DOCX files into ProWriting Aid" >> $GITHUB_STEP_SUMMARY
-        echo "4. ProWriting Aid will now properly detect chapter breaks!" >> $GITHUB_STEP_SUMMARY
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-docx
+
+      - name: Make conversion script executable
+        run: chmod +x Convert_YFD_to_PWA.sh
+
+      - name: Check input files
+        run: |
+          echo "Checking markdown_yfd directory:"
+          ls -la markdown_yfd/ || echo "No markdown_yfd directory found"
+          echo "Total markdown files:"
+          find markdown_yfd/ -name "*.md" -type f | wc -l || echo "0"
+
+      - name: Run conversion script
+        run: |
+          echo "Starting conversion process..."
+          ./Convert_YFD_to_PWA.sh
+
+      - name: Verify conversion results
+        run: |
+          echo "Checking docx_pwa directory:"
+          ls -la docx_pwa/ || echo "No output directory found"
+          echo "Generated DOCX files:"
+          find docx_pwa/ -name "*.docx" -type f | wc -l || echo "0"
+
+      - name: Upload converted DOCX files
+        uses: actions/upload-artifact@v3
+        with:
+          name: converted-docx-files
+          path: |
+            docx_pwa/*.docx
+          retention-days: 30
+
+      - name: Upload conversion log
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: conversion-log
+          path: |
+            *.log
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Create deployment summary
+        run: |
+          echo "# Conversion Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## Input Files" >> $GITHUB_STEP_SUMMARY
+          echo "- Total markdown files processed: $(find markdown_yfd/ -name '*.md' -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "## Output Files" >> $GITHUB_STEP_SUMMARY
+          echo "- DOCX files generated: $(find docx_pwa/ -name '*.docx' -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- Combined manuscript: $(ls -1 docx_pwa/all_chapters.docx 2>/dev/null && echo 'Created' || echo 'Not created')" >> $GITHUB_STEP_SUMMARY
+          echo "## Usage" >> $GITHUB_STEP_SUMMARY
+          echo "1. Download the 'converted-docx-files' artifact from this workflow run" >> $GITHUB_STEP_SUMMARY
+          echo "2. Extract the ZIP file to get your DOCX files" >> $GITHUB_STEP_SUMMARY
+          echo "3. Import the DOCX files into ProWriting Aid" >> $GITHUB_STEP_SUMMARY
+          echo "4. ProWriting Aid will now properly detect chapter breaks!" >> $GITHUB_STEP_SUMMARY

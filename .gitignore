@@ -9,6 +9,10 @@ Screenshots/_YFD_2025-08-14 2.gif
 *.zip
 LAB_NOTES.md
 LAB_NOTES.md.txt
+
+# Local development files
+server.log
+nohup.out
 docx_pwa/Chapter_1.docx
 docx_pwa/Chapter_2.docx
 docx_pwa/Chapter_3.docx
