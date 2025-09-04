@@ -4,6 +4,13 @@ This repository contains the Lab 6 markdown conversion project for preparing "Yo
 
 ## 🚀 Quick Start
 
+### Web Interface (Recommended)
+**Launch as webpage:** Visit the [YFD to PWA Converter](https://blossomz37.github.io/Lab-6-Convert-YFD-PWA/) web application
+
+- **🌐 Browser Conversion:** Upload and convert files directly in your browser (completely private)
+- **⚡ GitHub Actions:** Use automated workflows for batch processing
+
+### Command Line Interface
 ```bash
 chmod +x Convert_YFD_to_PWA.sh
 ./Convert_YFD_to_PWA.sh
@@ -12,6 +19,8 @@ chmod +x Convert_YFD_to_PWA.sh
 ## Overview
 
 This project includes:
+- **🌐 Web Application:** Browser-based conversion interface at [blossomz37.github.io/Lab-6-Convert-YFD-PWA](https://blossomz37.github.io/Lab-6-Convert-YFD-PWA/)
+- **⚡ GitHub Actions:** Automated conversion workflows
 - Original markdown files for a 20-chapter manuscript ("Verona Resurrected")
 - Automated conversion script for ProWriting Aid compatibility
 - DOCX output files ready for ProWriting Aid import
@@ -43,7 +52,25 @@ lab_6_markdown_conversion_project/
   - Ubuntu/Debian: `sudo apt-get install pandoc`
   - Windows: Download from [pandoc.org](https://pandoc.org/installing.html)
 
-## Convert YFD to PWA Script
+## Usage Methods
+
+### 🌐 Web Interface (Easiest)
+
+Visit **[blossomz37.github.io/Lab-6-Convert-YFD-PWA](https://blossomz37.github.io/Lab-6-Convert-YFD-PWA/)** for the user-friendly web application:
+
+1. **Browser Conversion:** Upload your `.md` files directly in the browser
+   - Completely private - no files leave your device
+   - Drag & drop interface for easy file handling
+   - Instant conversion with downloadable results
+
+2. **GitHub Actions:** Use automated workflows for batch processing
+   - Fork this repository to your account
+   - Replace files in `markdown_yfd/` with your manuscript
+   - Automatic conversion via GitHub's cloud infrastructure
+
+### 📱 Command Line Interface
+
+For advanced users or local processing:
 
 ### Purpose
 
